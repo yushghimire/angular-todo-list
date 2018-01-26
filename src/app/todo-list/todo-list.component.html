@@ -1,0 +1,9 @@
+<div>
+    <!-- <app-api-call></app-api-call> -->
+    <app-todo-form (todoCreated)="todoService.addTodo($event)"></app-todo-form>
+    <app-todo *ngFor="let todo of todos" (deleteTodo)="todoService.deleteTodo($event)" (showEditBlock)="toggle($event)"
+        [todo]="todo"></app-todo>
+    <app-edit-block *ngIf="!hide"></app-edit-block>
+    <!-- <app-form-template></app-form-template> -->
+    <body></body>
+</div>

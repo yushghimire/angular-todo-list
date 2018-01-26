@@ -1,0 +1,6 @@
+<div class="card card-block" [ccCardHover]="{ querySelector: '.card-text' }">
+  <h1 class="card-title">{{ todo.firstName + ' ' + todo.lastName }}</h1>
+  <p class="card-text">{{ 'password: ' + todo.password }}</p>
+  <button class="btn btn-primary" (click)="editItem()">Edit</button>
+  <button class="btn btn-danger" (click)="deleteItem()">Delete</button>
+</div>
